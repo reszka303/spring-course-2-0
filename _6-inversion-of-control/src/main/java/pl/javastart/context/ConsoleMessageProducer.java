@@ -1,4 +1,4 @@
-package pl.javastart.messaging;
+package pl.javastart.context;
 
 import org.springframework.stereotype.Service;
 
