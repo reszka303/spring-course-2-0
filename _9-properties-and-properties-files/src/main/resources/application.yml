@@ -1,0 +1,4 @@
+app:
+  message:
+    decorator: UPPERCASE
+#    decorator: LOWERCASE

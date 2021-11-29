@@ -1,0 +1,1 @@
+Ten komunikat znajduje się w pliku message.txt, który znajduje się w folderze resources.
