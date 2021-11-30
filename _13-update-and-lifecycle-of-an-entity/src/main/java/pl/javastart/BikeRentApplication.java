@@ -3,8 +3,8 @@ package pl.javastart;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import pl.javastart.bikerent.*;
-import pl.javastart.bikerent.Bike;
+import pl.javastart.bikerent.BikeService;
+import pl.javastart.bikerent.NewBikeDto;
 
 @SpringBootApplication
 public class BikeRentApplication {
