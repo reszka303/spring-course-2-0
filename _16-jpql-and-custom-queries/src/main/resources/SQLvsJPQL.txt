@@ -1,0 +1,59 @@
+SELECT
+
+1. zwraca wszystkie rekordy zapisane w tabeli EMPLOYEE
+SQL
+SELECT * FROM EMPLOYEE
+
+JPQL
+SELECT e FROM Employee e
+
+2. zwraca nazwiska pracowników z tabeli EMPLOYEE
+SQL
+SELECT LAST_NAME FROM EMPLOYEE
+
+JPQL
+SELECT e.lastName FROM EMPLOYEE e
+
+3.zapytanie ograniczające do osób, które zarabiają więcej niż 3000
+SQL
+SELECT FROM EMPLOYEE WHERE SALARY > 3000
+
+JPQL
+SELECT e FROM EMPLOYEE e WHERE e.salary > 3000
+
+4. zapytanie ograniczające się do osób o konkretnym nazwisku o zarabiających więcej niż 3000
+SQL
+SELECT FROM EMPLOYEE WHERE LAST_NAME= 'Kowalski' AND SALARY > 3000
+
+JPQL
+SELECT e FROM EMPLOYEE e WHERE e.lastName = 'Kowalski' AND e.salary > 3000
+
+INSERT
+brak w JPQL zapytania odpowiedzialnego za wstawianie danych. Używamy metody EntityManager
+(persist lub merge), albo w przypadku repozytoriów Spring Data metodę save(), która te metody opakowuje
+
+UPDATE
+1. zwiększenie wypłaty wszystkim pracownikom o 100
+SQL
+UPDATE EMPLOYEE SET SALARY= 100;
+
+JPQL
+UPDATE e EMPLOYEE e SET e.salary = e.salary + 100
+
+DELETE
+1. usunięcie pracownika z id 5
+SQL
+DELETE FROM EMPLOYEE WHERE id= 5
+
+JPQL
+DELETE e FROM EMPLOYEE e WHERE e.id = 5
+
+Wykonane zapytania w bazie H2
+SELECT * FROM EMPLOYEE
+
+SELECT ID, FIRST_NAME, LAST_NAME, SALARY FROM EMPLOYEE WHERE SALARY BETWEEN 3000.0 AND 5000.0
+
+
+
+
+
