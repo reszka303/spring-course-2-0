@@ -1,4 +1,4 @@
-package com.example.shop;
+package pl.javastart.shop;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
