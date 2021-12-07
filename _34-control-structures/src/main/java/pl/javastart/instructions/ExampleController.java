@@ -9,7 +9,7 @@ class ExampleController {
 
     @GetMapping("/")
     String example(Model model) {
-        model.addAttribute(new Person("null", "Kowalski", 17));
+        model.addAttribute(new Person("Jan", "Kowalski", 17));
         model.addAttribute("lang", "fr");
         return "example";
     }

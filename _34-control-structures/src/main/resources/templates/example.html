@@ -48,7 +48,7 @@
             <span th:text="${person.lastName}"></span>nie ma imienia i nie jest pełnoletni
         </p>
         <p th:if="${person.firstName != null && person.age < 18}">
-            <span th:text="${person.lastName} + ' ' + ${person.firstName}"></span> nie ma imienia i nie jest pełnoletni
+            <span th:text="${person.lastName} + ' ' + ${person.firstName}"></span> nie jest pełnoletni
         </p>
     </div>
 
