@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Praca z tekstem</title>
+</head>
+<body>
+    <h1>Praca z tekstem</h1>
+
+<!-- Automatyczna podmiana znaków specjalnych na encje  -->
+    <h3>Automatyczna podmiana znaków specjalnych na encje</h3>
+    <p th:text="${dangerousCode}">Jakiś tekst</p>
+
+    <p th:utext="${dangerousCode}">Jakiś tekst</p>
+
+<!-- Text inlining   -->
+    <h3>Text inlining</h3>
+    <p>Twoje imię: <span th:text="${firstName}">John</span></p>
+
+    <p th:inline="text">Twoje imię: [[${firstName}]]</p>
+
+<!--Łączenie tekstu w wyrażeniach-->
+    <h3>Łączenie tekstu w wyrażeniach</h3>
+    <p>Twoję imię: <span th:text="${firstName}">John</span></p>
+    <p th:text="'Twoje imię: ' + ${firstName}">Twoje imię: John</p>
+
+<!--Podmiana literałów-->
+    <h3>Podmiana literałów</h3>
+
+    <p th:text="'Twoje imię i nazwisko: ' + ${firstName} + '' + ${lastName}">
+        Twoje imię i nazwisko: John Doe</p>
+
+    <p th:text="'Twoje imię i nazwisko: ' + ${firstName + '' + lastName}">
+        Twoje imię i nazwisko: John Doe</p>
+
+<!--zastosowanie podmiany literałów-->
+
+    <p th:text="|Twoje imię i nazwisko: ${firstName} ${lastName}|">
+        Twoje imię i nazwisko: John Doe</p>
+
+</body>
+</html>
