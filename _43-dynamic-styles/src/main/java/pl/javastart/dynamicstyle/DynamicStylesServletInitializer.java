@@ -8,10 +8,10 @@ public class DynamicStylesServletInitializer extends SpringBootServletInitialize
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(DynamicStylesApplication.class);
+        return builder.sources(DynamicStyleApplication.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DynamicStylesApplication.class);
+        SpringApplication.run(DynamicStyleApplication.class);
     }
 }

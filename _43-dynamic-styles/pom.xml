@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.javastart</groupId>
-    <artifactId>_42-dynamic-styles</artifactId>
+    <artifactId>_43-dynamic-styles</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>_42-dynamic-styles</name>
-    <description>_42-dynamic-styles</description>
+    <name>_43-dynamic-styles</name>
+    <description>_43-dynamic-styles</description>
     <properties>
         <java.version>17</java.version>
     </properties>
