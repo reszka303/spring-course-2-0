@@ -6,10 +6,10 @@
     <link rel="stylesheet" th:href="@{/styles/main.css}">
 </head>
 <body>
-    <div class="container">
-        <img th:src="@{|/images/${picture.getFileName()}|}" th:alt="${picture.title}" class="pic">
-        <p th:text="${picture.title}"></p>
-        <p><a th:href="@{/}">Strong główna</a></p>
-    </div>
+<div class="container">
+    <img th:src="@{|/images/${picture.getFileName()}|}" th:alt="${picture.title}" class="pic">
+    <p th:text="${picture.title}"></p>
+    <p><a th:href="@{/}">Strona główna</a></p>
+</div>
 </body>
 </html>
