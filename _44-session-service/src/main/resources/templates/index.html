@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Licznik odwiedzin</title>
+</head>
+<body>
+    <h1>Cześć</h1>
+<!-- Wykorzystanie interfejsu session    -->
+<!--    <p th:text="|Twoja liczba odwiedzin tej strony to ${session.counter}|">-->
+
+    <!-- Wykorzystanie komponentu sesyjnego Springa    -->
+    <p th:text="|Twoja liczba odwiedzin tej strony to ${@visitCounter.counter}|">
+        Twoja liczba odwiedzin tej strony to: 123
+    </p>
+</body>
+</html>
