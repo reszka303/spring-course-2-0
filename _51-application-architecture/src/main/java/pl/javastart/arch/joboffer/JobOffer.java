@@ -1,9 +1,17 @@
-package pl.javastart.arch;
+package pl.javastart.arch.joboffer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.javastart.arch.company.Company;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
-class JobOfferDto {
+@Entity
+public class JobOffer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String description;
@@ -13,8 +21,16 @@ class JobOfferDto {
     private Double minSalary;
     private Double maxSalary;
     private LocalDateTime dateAdded;
-    private Long companyId;
-    private String companyName;
+    private Integer submissions;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "company_id")
+    @JsonIgnore
+    private Company company;
+
+    @JsonProperty
+    String companyName() {
+        return company.getName();
+    }
 
     public Long getId() {
         return id;
@@ -88,19 +104,19 @@ class JobOfferDto {
         this.dateAdded = dateAdded;
     }
 
-    public Long getCompanyId() {
-        return companyId;
+    public Integer getSubmissions() {
+        return submissions;
     }
 
-    public void setCompanyId(Long companyId) {
-        this.companyId = companyId;
+    public void setSubmissions(Integer submissions) {
+        this.submissions = submissions;
     }
 
-    public String getCompanyName() {
-        return companyName;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

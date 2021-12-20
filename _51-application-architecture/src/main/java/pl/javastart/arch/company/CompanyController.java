@@ -1,4 +1,4 @@
-package pl.javastart.arch;
+package pl.javastart.arch.company;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
