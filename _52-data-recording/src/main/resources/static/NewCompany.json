@@ -1,0 +1,8 @@
+{
+  "name": "ACME",
+  "description": "Jesteśmy nową, ale prężnie rozwijającą się firmą z sektora IT",
+  "city": "Kraków",
+  "employees": 5,
+  "telephone": "48 111-222-333",
+  "email": "contact@acme.org"
+}
