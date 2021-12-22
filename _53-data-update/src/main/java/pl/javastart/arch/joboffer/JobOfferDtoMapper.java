@@ -3,8 +3,6 @@ package pl.javastart.arch.joboffer;
 import org.springframework.stereotype.Service;
 import pl.javastart.arch.company.CompanyRepository;
 
-import java.time.LocalDateTime;
-
 @Service
 class JobOfferDtoMapper {
 
