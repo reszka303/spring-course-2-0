@@ -11,7 +11,8 @@ public class EmailMessage {
     @NotNull
     @Email
     private String recipient;
-    @NotBadWord(lang = {Lang.PL, Lang.EN})
+    @NotBadWord(lang = {Lang.PL, Lang.EN, Lang.DE})
+//    @NotBadWord(lang = {Lang.EN})
     private String message;
 
     public EmailMessage(String sender, String recipient, String message) {
