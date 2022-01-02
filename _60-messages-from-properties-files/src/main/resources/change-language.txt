@@ -1,0 +1,5 @@
+-Duser.country=PL -Duser.language=pl
+-Duser.country=US -Duser.language=US
+
+zmiana języka następuje w ustawieniach konfiguracji startowej aplikacji
+nazwa klasy uruchomieniowej -> edit configuration -> Environment -> VM options
