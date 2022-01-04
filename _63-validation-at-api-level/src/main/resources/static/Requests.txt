@@ -1,0 +1,19 @@
+POST localhost:8080/api/clients
+
+Klient poprawny
+
+{
+    "firstName": "Jan",
+    "lastName": "Kowalski",
+    "email": "jan@kowalski.com",
+    "age": 22
+}
+
+Klient niewłaściwy
+
+{
+    "firstName": "",
+    "lastName": "Kowalski",
+    "email": "jankowalski.com",
+    "age": -5
+}
