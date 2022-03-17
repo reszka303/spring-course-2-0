@@ -6,3 +6,5 @@ spring:
     password: admin
   liquibase:
     contexts: prod
+  jpa:
+    open-in-view: false

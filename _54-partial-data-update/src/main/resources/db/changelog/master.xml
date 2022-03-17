@@ -41,5 +41,5 @@
                                  referencedTableName="company"
                                  referencedColumnNames="id"/>
     </changeSet>
-    <include file="../testdata/testdata.sql" relativeToChangelogFile="true"/>
+    <include file="../testdata/testdata-dev.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>

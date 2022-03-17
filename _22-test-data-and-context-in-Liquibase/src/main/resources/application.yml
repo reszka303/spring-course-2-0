@@ -2,4 +2,3 @@ spring:
   liquibase:
     contexts: dev
     change-log: classpath:db/master.xml
-
